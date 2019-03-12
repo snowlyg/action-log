@@ -37,6 +37,7 @@ class ActionLogRepository
         $actionLog->ip = request()->getClientIp() ? request()->getClientIp() : '';
 
         $region = clientService::getRegionFromIp(request()->getClientIp());
+        $actionLog->region = implode("-",$region);
 //        //国家
 //        $actionLog->country = $region['country'] ? $region['country'] : '';
 //        //省份
@@ -77,9 +78,9 @@ class ActionLogRepository
         //请求的ip
         $actionLog->ip = request()->getClientIp() ? request()->getClientIp() : '';
 
-
         $region = clientService::getRegionFromIp(request()->getClientIp());
 
+        $actionLog->region = implode("-",$region);
 //        //国家
 //        $actionLog->country = $region['country'] ? $region['country'] : '';
 //        //省份
