@@ -37,12 +37,12 @@ class ActionLogRepository
         $actionLog->ip = request()->getClientIp() ? request()->getClientIp() : '';
 
         $region = clientService::getRegionFromIp(request()->getClientIp());
-        //国家
-        $actionLog->country = $region['country'] ? $region['country'] : '';
-        //省份
-        $actionLog->province = $region['province'] ? $region['province'] : '';
-        //城市
-        $actionLog->city = $region['city'] ? $region['city'] : '';
+//        //国家
+//        $actionLog->country = $region['country'] ? $region['country'] : '';
+//        //省份
+//        $actionLog->province = $region['province'] ? $region['province'] : '';
+//        //城市
+//        $actionLog->city = $region['city'] ? $region['city'] : '';
         //请求url
         $actionLog->url = request()->getRequestUri() ? request()->getRequestUri() : '';
         //请求内容
@@ -80,12 +80,12 @@ class ActionLogRepository
 
         $region = clientService::getRegionFromIp(request()->getClientIp());
 
-        //国家
-        $actionLog->country = $region['country'] ? $region['country'] : '';
-        //省份
-        $actionLog->province = $region['province'] ? $region['province'] : '';
-        //城市
-        $actionLog->city = $region['city'] ? $region['city'] : '';
+//        //国家
+//        $actionLog->country = $region['country'] ? $region['country'] : '';
+//        //省份
+//        $actionLog->province = $region['province'] ? $region['province'] : '';
+//        //城市
+//        $actionLog->city = $region['city'] ? $region['city'] : '';
         //请求url
         $actionLog->url = request()->getRequestUri() ? request()->getRequestUri() : '';
         //请求内容
