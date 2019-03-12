@@ -8,7 +8,7 @@ Laravel 5 操作日志记录
 {
     "require": {
        
-        "majikang/action-log": "~1.0"
+        "snowlyg/action-log": "~1.0"
     },
    
 }
@@ -18,7 +18,7 @@ or
 
 Require this package with composer:
 ```
-composer require majikang/action-log 
+composer require snowlyg/action-log
 ```
 
 Update your packages with ```composer update``` or install with ```composer install```.
@@ -33,7 +33,7 @@ Find the `providers` key in `config/app.php` and register the ActionLog Service 
 for Laravel 5.1+
 ```php
     'providers' => [
-        majikang\ActionLog\ActionLogServiceProvider::class,
+        snowlyg\ActionLog\ActionLogServiceProvider::class,
     ]
 ```
 

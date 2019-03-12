@@ -1,7 +1,7 @@
 <?php
-namespace majikang\ActionLog\Repositories;
+namespace snowlyg\ActionLog\Repositories;
 
-use majikang\ActionLog\Services\clientService;
+use snowlyg\ActionLog\Services\clientService;
 
 class ActionLogRepository
 {
@@ -21,7 +21,7 @@ class ActionLogRepository
      */
     public function createActionLog($type, $content)
     {
-        $actionLog = new \majikang\ActionLog\Models\ActionLog();
+        $actionLog = new \snowlyg\ActionLog\Models\ActionLog();
         if (auth()->check()) {
             $actionLog->uid = auth()->user()->id;
             $actionLog->username = auth()->user()->name;
@@ -61,7 +61,7 @@ class ActionLogRepository
      */
     public function apiLog($type, $content, $result)
     {
-        $actionLog = new \majikang\ActionLog\Models\ActionLog();
+        $actionLog = new \snowlyg\ActionLog\Models\ActionLog();
         if (auth()->check()) {
             $actionLog->uid = auth()->user()->id;
             $actionLog->username = auth()->user()->name;

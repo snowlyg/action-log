@@ -1,6 +1,6 @@
 <?php
 
-namespace majikang\ActionLog;
+namespace snowlyg\ActionLog;
 
 use Illuminate\Support\ServiceProvider;
 use ActionLog;
@@ -56,7 +56,7 @@ class ActionLogServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->singleton("ActionLog", function ($app) {
-            return new \majikang\ActionLog\Repositories\ActionLogRepository();
+            return new \snowlyg\ActionLog\Repositories\ActionLogRepository();
         });
     }
 }

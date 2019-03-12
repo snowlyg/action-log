@@ -1,5 +1,5 @@
 <?php
-namespace majikang\ActionLog\Models;
+namespace snowlyg\ActionLog\Models;
 
 use Illuminate\Database\Eloquent\Model;
 

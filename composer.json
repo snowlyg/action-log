@@ -1,12 +1,12 @@
 {
-  "name": "majikang/action-log",
+  "name": "snowlyg/action-log",
   "description": "A laravel package of ActionLog，记录用户操作和api请求",
 
   "license": "MIT",
   "authors": [
     {
-      "name": "majikang",
-      "email": "10307440@qq.com"
+      "name": "snowlyg",
+      "email": "569616226@qq.com"
     }
   ],
   "require": {
@@ -15,7 +15,7 @@
 
   "autoload": {
     "psr-4": {
-      "majikang\\ActionLog\\": "src/"
+      "snowlyg\\ActionLog\\": "src/"
     }
   }
  

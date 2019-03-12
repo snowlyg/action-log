@@ -1,6 +1,6 @@
 <?php
 
-namespace majikang\ActionLog\Facades;
+namespace snowlyg\ActionLog\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
